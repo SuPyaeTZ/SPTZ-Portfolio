@@ -126,13 +126,15 @@ body{
   transition: all 0.3s ease-in-out;
 }
 
-/*=============== CARD ===============*/
+
 .poster {
+  margin-top: 1px;
   display: grid;
   place-items: center;
   margin-inline: 2.5rem;
   padding-block: 5rem;
 }
+
 
 .card__container {
   display: grid;
@@ -415,7 +417,7 @@ nav{
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 .top-header h1{
   font-weight: 600;
@@ -615,7 +617,7 @@ nav{
 }
 
 .section__subheader{
-  margin-top: 6rem;
+  margin-top: 4rem;
   color: rgb(240, 159, 72);
   font-size: 2rem;
   text-align: center;
