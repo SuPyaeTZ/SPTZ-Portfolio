@@ -7,9 +7,9 @@
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
+    --text-color-third: rgb(249, 255, 255);
 
-    --first-color: rgb(110, 87, 224);
+    --first-color: rgb(235, 211, 126);
     --first-color-hover: rgb(40, 91, 212);
 
     --second-color: rgb(0, 201, 255);
@@ -285,58 +285,99 @@ body{
     padding-inline: 2.5rem;
   }
 }
-/* ----- NAVIGATION BAR ----- */
-nav{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 90px;
-    line-height: 90px;
-    background: var(--body-color);
-    padding-inline: 9vw;
-    transition: .3s;
-    z-index: 100;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav-logo{
-   position: relative;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav-name{
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--text-color-third);
+
+.container {
+  width: 100%;
 }
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
+
+/* Header/Nav Styling */
+nav#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fcfcfc;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
-.nav-menu, .nav_menu_list{
-    display: flex;
+
+.nav-logo .nav-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0c946;
 }
-.nav-menu .nav_list{
-    list-style: none;
-    position: relative;
+
+.nav-menu {
+  display: flex;
 }
-.nav-link{
-    text-decoration: none;
-    color: var(--text-color-second);
-    font-weight: 500;
-    padding-inline: 15px;
-    margin-inline: 20px;
+
+.nav_menu_list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
 }
-.nav-menu-btn{
-    display: none;
+
+.nav_list a {
+  color: #101010;
+  text-decoration: none;
+  position: relative;
 }
-.nav-menu-btn i{
-    font-size: 28px;
-    cursor: pointer;
+
+
+/* Show the circle only on active nav item */
+.nav_list .active-link + .circle {
+  display: block;
 }
+
+/* Hamburger Menu Icon */
+.nav-menu-btn {
+  display: none;
+  font-size: 2.8rem;
+  color: #151414;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 40px;
+      background: #e9d5d5;
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+  }
+
+  .nav-menu.active {
+      display: block;
+  }
+
+  .nav_menu_list {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .nav-menu-btn {
+      display: block;
+  }
+}
+
 .active-link{
     position: relative;
-    color: var(--first-color);
     transition: .3;
 }
 .active-link::after{
@@ -347,7 +388,6 @@ nav{
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
     border-radius: 50%;
 }
 
@@ -645,7 +685,7 @@ nav{
 }
 
 .icons ul li a:hover{
-  background-color: #d8c2c5;
+  background-color: #090909;
 }
 
 .about .about__grid {
