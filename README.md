@@ -4,6 +4,7 @@ Portfolio
 -Install xampp
 -This function is portfolio design.
 
-![image](https://github.com/user-attachments/assets/6048fd73-a3bf-47d9-8543-a7f8b756b185)
+![image](https://github.com/user-attachments/assets/b56c9a53-d0bc-43b0-a3ee-3dee38426da3)
+
 
 
