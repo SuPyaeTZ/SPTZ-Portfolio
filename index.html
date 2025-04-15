@@ -88,12 +88,7 @@
                   </div>
                   
             </div>
-            <div class="social_icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
+     
           </div>
           <div class="featured-image">
             <div class="image">
@@ -117,7 +112,7 @@
         </div>
         <div class="about__content">
           <p>
-            As a Web Developer,  specialize in creating user interfaces and experiences for digital products. In Web developer produces websites and applications that allow users to access and interact with the site or app using web languages such as HTML, CSS, JavaScript, PHP , UI UX Design, Poster. A Web developer designed the design elements you see when you visit a website.I create to application Canva ,Figma, Vs code.
+            As a Web Developer, I specialize in creating user interfaces and experiences for digital products. In Web developer produces websites and applications that allow users to access and interact with the site or app using web languages such as HTML, CSS, JavaScript, PHP , UI UX Design, Poster. A Web developer designed the design elements you see when you visit a website.I create to application Canva ,Figma, Vs code.
           </p>
           
           <div class="featured-text-btn">
@@ -301,10 +296,28 @@
  </div>
 
 
+
   <div id="contact" class="contact">
+    <div class="social_icons">
+      <div class="icon">
+          <a href="https://www.linkedin.com/in/supyaetz/" target="_blank">
+              <i class="uil uil-linkedin-alt"></i>
+          </a>
+      </div>
+      <div class="icon">
+          <a href="https://github.com/SuPyaeTZ" target="_blank">
+              <i class="uil uil-github-alt"></i>
+          </a>
+      </div>
+      <div class="icon">
+        <a href="https://www.youtube.com/@supyae6318" target="_blank">
+        <i class="uil uil-youtube"></i>
+      </div>
+  </div>
+  
       <p>Let Me Get You A Beautiful Website.</p>
       <h2>supyaetz@gmail.com</h2>
-      <a class="button-two"href="#">Hire Me</a>
+ 
    </div>
 
     <!-- ----- TYPING JS Link ----- -->
@@ -316,6 +329,11 @@
     <!-- ----- MAIN JS ----- -->
     <script src="main.js"></script>
     <script>
+      function myMenuFunction() {
+        const navMenu = document.getElementById("myNavMenu");
+        navMenu.classList.toggle("active");
+      }
+      
         document.querySelector('.download-cv-button').addEventListener('click', function () {
            alert('CV is downloading...');
         });

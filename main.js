@@ -41,7 +41,7 @@ var typingEffect = new Typed(".typedText1",{
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText2",{
-    strings : ["Web Developer","Poster Designer","UI UX Designer"],
+    strings : ["Web Developer","Poster Design","UI UX Design"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
